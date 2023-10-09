@@ -1,0 +1,178 @@
+/*
+* Creating the body class to customize the background color of the website
+*/
+body {
+    background-color: black;
+}
+
+/*
+* Customizing the home page div class
+* Assigning different attributes to the background image in the div class
+* Making the image 100% height and width to cover the whole background
+* Centering the background image
+* Hiding the overflow of the background image
+*/
+.homePage {
+    width: 100%;
+    height: 130vh;
+    background-image: url(Images/Volcano.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*
+* Creating the h1 class to cutomize the h1 tags
+* Changing the text color
+* Aligning the text to be in the center of the page
+*/
+h1 {
+    font-size: 80px;
+    color: transparent;
+    text-align: center;
+    font-family: normal;
+    -webkit-text-stroke: 1px #fff;
+    background: url(Images/Water\ splash.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: title 20s linear infinite;
+}
+
+/* Calling the keyframes for the movement background for the h1 title */
+@keyframes title{
+    100%{
+        background-position: 2500px 0;
+    }
+}
+
+/* Creating an h2 class to customize the font size for the h2 title */
+h2 {
+    font-size: 38px;
+    color: lightskyblue;
+}
+
+/* Creating the Sources class to customize the Sources section */
+#Sources {
+    font-size: 22px;
+    color: white;
+}
+
+/* Deleting the line under the href link for the sources */
+#Sources a{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(58, 255, 179);
+    position: relative;
+    cursor: pointer;
+}
+
+/* Making a new line under the links once the user hover over them */
+#Sources a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+
+/* Making the line only 50% of the link's width */
+#Sources a:hover::after{
+    width:50%;
+}
+
+
+/*
+* Creating the summary class to customize the text question in the beginning of the page
+* Changing the font style to italic
+* Changing the font size making the text bigger
+* Changing the text color to white
+*/
+summary {
+    font-style: italic;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+/*
+* Creating the Sulfur class to customize the div class
+* Changing the font size making the text bigger
+* Changing the text color to white
+* Changing the width of the text to make the image aligned in the middle
+*/
+.Sulfur {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    font-size: 28px;
+    color: white;
+    padding-left: 20px;
+    width: 1300px;
+}
+
+/* Creating a class for the Sulfur cycle image to put a border on it */
+.Simg {
+    border-style: solid;
+    border-radius: 12px;
+}
+
+/*
+* Creating a class for the button span to customize the arrow
+* Changing the size of the arrow
+* Aligning the arrow next to the text
+*/
+button span{
+    font-size: 30px;
+    line-height: 10px;
+    margin-left: 5px;
+}
+
+/* Creating the nav class to center the link for the video */
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+/* Styling the text in the link */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+/* 
+* Creating the nav class and calling the a href link to customize it
+* Styling the link name 
+*/
+nav ul li a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    position: relative;
+}
+
+/*
+* Creating the nav after class to create the underline appearance for the video link
+* Making it only cover 50% of the link and not the full text
+*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+
+/* Creating a hover after class to make the width of the under line only 50% of the width of the link */
+nav ul li a:hover::after{
+    width: 50%;
+}
