@@ -9,7 +9,7 @@ body {
     height: 100vh;
     color: white;
     width: 1700px;
-    font-size: 26px;
+    font-size: 34px;
 }
 
 
@@ -39,12 +39,12 @@ h1 {
 
 /*  */
 abbr {
-    font-size: 28px;
+    font-size: 36px;
 }
 
 /*  */
 strong {
-    font-size: 28px;
+    font-size: 36px;
 }
 
 /*  */
@@ -52,4 +52,11 @@ strong {
     font-size: 50px;
     align-items: center;
     color: blue;
+}
+
+/*  */
+p {
+    font-size: 34px;
+    width: 1400px;
+    padding-left: 30px;
 }

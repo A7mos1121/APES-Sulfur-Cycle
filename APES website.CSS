@@ -113,13 +113,14 @@ summary {
     font-size: 28px;
     color: white;
     padding-left: 20px;
-    width: 1300px;
+    width: 1700px;
 }
 
 /* Creating a class for the Sulfur cycle image to put a border on it */
 .Simg {
     border-style: solid;
     border-radius: 12px;
+    margin-left: 50px;
 }
 
 /*
