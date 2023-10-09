@@ -46,3 +46,10 @@ abbr {
 strong {
     font-size: 28px;
 }
+
+/*  */
+.Steps a{
+    font-size: 50px;
+    align-items: center;
+    color: blue;
+}
